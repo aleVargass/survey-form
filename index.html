@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/survey-form.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-form">
+            <h1 id="title">SURVEY FORM</h1>
+            <p id="description">Send your form, thanks!</p>
+        </div>
+
+        <form action="#" id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+
+                <label id="number-label" for="number">Age</label>
+                <input id="number" type="number" min="1" max="122" placeholder="Enter your age">
+
+                <label class="ask-form">Do you like the site?</label>
+                <label for="no">
+                    <input id="no" value="no" type="radio" name="rate-site">No
+                </label>
+                <label for="Fifty/fifty">
+                    <input id="Fifty/fifty" value="fifty/fifty" type="radio" name="rate-site">Fifty/fifty
+                </label>
+                <label for="yes">
+                    <input id="yes" value="yes" type="radio" name="rate-site">Yes
+                </label>
+
+                <label class="ask-form" for="dropdown">What language do you prefer?</label>
+                <select name="language" id="dropdown">
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="go">Go</option>
+                </select>
+
+                <label class="ask-form">In which large company do you want to work?</label>
+                <label for="facebook"><input id="facebook" type="checkbox" name="desire-job"
+                        value="facebook">Facebook</label>
+                <label for="youtube"><input id="youtube" type="checkbox" name="desire-job"
+                        value="youtube">Youtube</label>
+                <label for="twitter"><input id="twitter" type="checkbox" name="desire-job"
+                        value="twitter">Twitter</label>
+                <label for="amazon"><input id="amazon" type="checkbox" name="desire-job" value="amazon">Amazon</label>
+                <label for="netflix"><input id="netflix" type="checkbox" name="desire-job"
+                        value="netflix">Netflix</label>
+                <label for="google"><input id="google" type="checkbox" name="desire-job" value="google">Google</label>
+
+                <label class="ask-form">Any comments or suggestions?</label>
+                <textarea name="comments" cols="30" rows="10" placeholder="Your comments here pls..."></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <aside></aside>
+
+    <footer></footer>
+
+</body>
+
+</html>
